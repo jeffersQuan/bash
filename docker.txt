@@ -1,0 +1,7 @@
+docker exec命令登录容器
+docker exec -it 容器ID /bin/bash
+
+
+ubuntu安装go
+解压下载的压缩包 tar zxvf go1.8.3.linux-amd64.tar.gz -C $GO_INSTALL_DIR
+设置环境变量  export PATH=$PATH:$GO_INSTALL_DIR/go/bin
