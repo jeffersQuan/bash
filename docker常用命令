@@ -1,0 +1,8 @@
+docker exec -it 07082ff59786 /bin/bash
+进入docker
+
+docker run -p 9100:9100 php:1.4.1
+运行docker镜像
+
+docker build -t "php:1.0" .
+用Dockerfile文件生成docker镜像
