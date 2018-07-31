@@ -15,28 +15,28 @@ alias gcob='git checkout -b'
 alias gcom='git checkout master'
 alias gf='git fetch'
 alias grom='git rebase origin/master'
-alias gpom='git push origin HEAD:refs/for/master'
-alias gl='git log --color --graph --decorate --pretty=oneline --abbrev-commit'
-alias gla='git log --color --graph --decorate --pretty=oneline --abbrev-commit --all'
-alias glg='git log --color --graph --decorate'
-alias gd='git diff --color'
-alias gst='git status'
-alias gca='git commit --amend'
+alias gpom='git push origin HEAD:master'
+alias glg='git lg'
+alias gd='git d'
+alias gst='git st'
+alias gca='git ca'
 alias grs='git reset --soft'
 alias grs1='git reset --soft HEAD^'
 alias grs2='git reset --soft HEAD^^'
 alias grh='git reset --hard'
 alias grh1='git reset --hard HEAD^'
 alias grh2='git reset --hard HEAD^^'
-alias gpot='git push origin HEAD:tmp/xxx'
+alias gpot='git pot'
 alias gh='git --help'
-alias gs='git stash save -u'
+alias gs='git s'
 alias gsp='git stash pop'
 alias gsa='git stash apply'
 alias l.='ls -d .* --color=auto'
 alias p1='cd ..'
 alias p2='cd ../..'
 alias p3='cd ../../..'
+alias proxy='export all_proxy=socks5://127.0.0.1:1080'
+alias unproxy='unset all_proxy'
 
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
@@ -45,3 +45,13 @@ alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
 
 
+
+
+###-tns-completion-start-###
+if [ -f /Users/quanjiafeng/.tnsrc ]; then
+    source /Users/quanjiafeng/.tnsrc
+fi
+###-tns-completion-end-###
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
